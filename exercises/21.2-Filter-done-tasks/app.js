@@ -10,3 +10,6 @@ let tasks = [
 ];
 
 //your code here
+let tasksDone = tasks.filter(object => object.done);
+
+console.log(tasksDone)

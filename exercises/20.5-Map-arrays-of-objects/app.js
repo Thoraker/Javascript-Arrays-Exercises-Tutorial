@@ -5,9 +5,9 @@ let people = [
 	{ name: 'Dylan', birthDate: new Date(1999,12,14) },
 	{ name: 'Steve', birthDate: new Date(2003,4,24) }
 ];
-
+let fechaDeHoy = new Date();
 let simplifier = function(person){
-	return person.name;
+	return ('Hello, my name is ' + person.name + ' and I am ' + Math.floor((fechaDeHoy - person.birthDate)/(1000*60*60*24*365))) + ' years old';
 };
 
 console.log(people.map(simplifier));
